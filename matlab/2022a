@@ -1,0 +1,15 @@
+#%Module######################################################################
+#
+# fake
+set MATLAB_VERSION 2022a
+set _CURPATH /local/opt/MATLAB/R$MATLAB_VERSION/bin
+conflict matlab
+
+proc ModulesHelp { } {
+puts stderr "This modulefile sets the default version of Matlab"
+puts stderr "to $MATLAB_VERSION"
+}
+
+
+prepend-path PATH $_CURPATH
+
