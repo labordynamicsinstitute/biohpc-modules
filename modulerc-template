@@ -1,0 +1,14 @@
+#%Module5.0
+##
+## INSTRUCTIONS
+## Move this file to your home directory, and adjust the last line.
+## For instance,
+##  cat modulesrc-template | sed "s/lv39/$(id -un)/" > $HOME/.modulerc
+## System-wide modules
+module use "/usr/share/Modules/modulefiles"
+module use "/etc/modulefiles"
+module use "/usr/share/modulefiles"
+## Adjust to your own path
+module use "/home/lv39/.modulefiles.d"
+# module use -a /etc/environment-modules/modulespath
+
